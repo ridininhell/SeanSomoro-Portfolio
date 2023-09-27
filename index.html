@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Copmatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sean Somoro Portfolio Website</title>
+    <link rel="stylesheet" href="style.css"
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi, I'm <span>Sean</span><br>Somoro From South Africa</h1>
+            </div>
+        </div>
+    </div>
+<!-- -------------------about------------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/aboutme.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-tile">About Me</h1>
+                    <p>I am a full-stack developer who specialises in designing the architecture of new websites and Web-Based Programs, developing updates to enhance the usability and capabilities of the backend of a website, maintaining the frontend of a website to make sure it works, optimizing websites to make sure they are mobile-friendly, working with users to understand their technology needs when designing new websites or programs, developing Application Programming Interfaces (APIs), creating servers and databases for websites, overseeing a project through each phase of the Systems Development Life Cycle (SDLC), working with graphic designers to develop attractive and functional websites and working with other professionals (including DevOps engineers, cybersecurity experts, graphic designers, and other web developers).
+
+    
+                        In addition to this I also possess the skillset for,and am qaulified in, JavaScript Algorithms and Data Structures, Responsive Web Design, Front End Development, Backend Development and APIs, Scientific Computing with Python and Data Analysis with Python. 
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Responsive Web Design</span><br>Web App Developments</li>
+                            <li><span>JavaScript</span><br>JavaScript Algorithms and Data Structures</li>
+                            <li><span>Front End Development</span><br>Front End Development Libraries</li>
+                            <li><span>Back End Development</span><br>Back End Development and APIs</li>
+                            <li><span>Scientific Computing With Python</span><br>Data Structures, Networking, Relational Databases, and Data Visualization</li>
+                            <li><span>Data Analysis With Python</span><br>Reading data from sources like CSVs and SQL, using libraries like Numpy, Pandas, Matplotlib, and Seaborn to process and visualize data</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>Responsive Web Design Certification</li>
+                            <li><span>2023</span><br>JavaScript Algorithms and Data Structures Certification</li>
+                            <li><span>2023</span><br>Front End Development Libraries Certification</li>
+                            <li><span>2023</span><br>Back End Development and APIs Certification</li>
+                            <li><span>2023</span><br>Scientific Computing With Python Certification</li>
+                            <li><span>2023</span><br>Data Analysis With Python Certification</li>
+                        </ul>
+                    </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- -------------------portfolio------------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-tile">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/balancesheet22.png">
+                    <div class="layer">
+                        <h3>Balance Sheet<h3>
+                    </div>
+            </div>
+            <div class="work">
+                <img src="images/landingpage.png">
+                    <div class="layer">
+                        <h3>Product Landing Page<h3>
+                    </div>
+            </div>
+            <div class="work">
+                <img src="images/technicaldocumentation22.png">
+                    <div class="layer">
+                        <h3>Technical Documnetation Page<h3>
+                    </div>
+            </div>
+            <div class="work">
+                <img src="images/cafemenu4.png">
+                    <div class="layer">
+                        <h3>Cafe Menu<h3>
+                    </div>
+            </div>
+            <div class="work">
+                <img src="images/catphotoapp22.png">
+                    <div class="layer">
+                        <h3>CatPhoto App<h3>
+                    </div>
+            </div>
+            <div class="work">
+                <img src="images/livecrypto.png">
+                    <div class="layer">
+                        <h3>Live Crypto Currency Price Tracker<h3>
+                    </div>
+            </div>
+            <div class="work">
+                <img src="images/quiz22.png">
+                    <div class="layer">
+                        <h3>Quiz<h3>
+                    </div>
+            </div>
+            <div class="work">
+                <img src="images/magazine33.png">
+                    <div class="layer">
+                        <h3>Magazine<h3>
+                    </div>
+            </div>
+            <div class="work">
+                <img src="images/cityskyline22.png">
+                    <div class="layer">
+                        <h3>City Skyline<h3>
+                    </div>
+            </div>
+            <div class="work">
+                <img src="images/tributepage22.png">
+                    <div class="layer">
+                        <h3>Tribute Page<h3>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    
+    </script>
+
+</body>  
+</html>
